@@ -38,8 +38,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1jxqw"]
-radius = 5.0990195
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
+size = Vector2(13, 18)
 
 [node name="Player" type="CharacterBody2D"]
 
@@ -48,8 +48,9 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_2hs0m")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.16614069
+frame_progress = 0.05421033
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
-shape = SubResource("CircleShape2D_1jxqw")
+z_index = 5
+position = Vector2(-0.5, -9)
+shape = SubResource("RectangleShape2D_3vyb7")
